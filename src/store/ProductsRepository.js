@@ -1,6 +1,6 @@
 
 class ProductsRepository  {
-    url = 'http://localhost:3000/Products/';
+    url = 'http://91.238.103.106:23845/Products/';
 
     get(id) {
        console.log(this.url + id ?? '');
