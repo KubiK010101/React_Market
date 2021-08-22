@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import store from './store/configureStore'
 import { Provider } from 'react-redux'
-import { ConnectedRouter } from 'connected-react-router';
-import { createBrowserHistory } from 'history';
 import { BrowserRouter as Router } from 'react-router-dom';
 import "bootstrap/scss/bootstrap.scss";
 import "./index.scss";

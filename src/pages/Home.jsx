@@ -1,5 +1,5 @@
-import React, { useCallback, useEffect, useState } from 'react'
-import { useSelector, useDispatch, useStore } from 'react-redux'
+import React, { useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 import { update } from '../store/products'
 import productRepository from '../store/ProductsRepository'
 import { ProductCard } from '../components/product-card'

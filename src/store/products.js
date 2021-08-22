@@ -1,6 +1,6 @@
-import { createSlice, configureStore } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
 
-const productUrl = "http://localhost:3000/Products";
+// const productUrl = "http://localhost:3000/Products";
 
 const productSlice = createSlice({
   name: 'products',

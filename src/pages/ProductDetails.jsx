@@ -13,10 +13,10 @@ export default function ProductDetails() {
 
     let { id } = useParams();
 
-    const history = useHistory();
+    // const history = useHistory();
     console.log(id);
 
-    const product = useSelector(state => state.products.products)?.filter(x => x.id == id)[0];  // Selects product from store
+    const product = useSelector(state => state.products.products)?.filter(x => x.id === id)[0];  // Selects product from store
     const dispatch = useDispatch(); // gives the function to update store state
 
     useEffect(() => { // if products are not loaded, requests store to update
@@ -38,13 +38,13 @@ export default function ProductDetails() {
             })
     }
 
-    const editProduct = (product) => {
-        productRepository.edit(product)
-            .then(() => productRepository.get())
-            .then(data =>
-                dispatch(update({ products: data }))
-            )
-    }
+    // const editProduct = (product) => {
+    //     productRepository.edit(product)
+    //         .then(() => productRepository.get())
+    //         .then(data =>
+    //             dispatch(update({ products: data }))
+    //         )
+    // }
     const addProduct = (product) => {
         productRepository.add(product)
             .then(() => productRepository.get())

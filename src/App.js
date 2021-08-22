@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Route, Switch } from "react-router";
-import { Product } from "./components/product";
 import Home from "./pages/Home";
 import ProductDetails from "./pages/ProductDetails";
 import {update} from './store/products'

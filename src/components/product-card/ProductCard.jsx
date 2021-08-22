@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import products from "../../store/products";
 import styles from './ProductCard.module.scss';
 
 
